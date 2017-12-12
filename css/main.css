@@ -1,1 +1,17 @@
 /* Los estilos de tu proyecto */
+header{
+    background-color: white;
+}
+
+.navbar-toggle{
+    float: left;
+    margin-left: 15px;
+}
+
+.navbar-header{
+    background-color: white;
+}
+
+.navbar-brand img {
+    width: 60%;
+}
