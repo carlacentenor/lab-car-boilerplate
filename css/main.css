@@ -1,4 +1,13 @@
-/* Los estilos de tu proyecto */
+/* Navegación  */
+:root{
+    --orange : #F7B617;
+    --grey :#2B2B2B;
+}
+*{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
 header{
     background-color: white;
 }
@@ -8,6 +17,10 @@ header{
     margin-left: 15px;
 }
 
+.navbar{
+    margin-bottom: 0;
+}
+
 .navbar-header{
     background-color: white;
 }
@@ -15,3 +28,182 @@ header{
 .navbar-brand img {
     width: 60%;
 }
+
+/*Section 1*/
+.bg-taxi {
+    background-image: url('../assets/images/taxi.jpg');
+   background-position: center center;
+   background-size: cover;
+    height: 80vh;
+}
+
+.bg-orange{
+    background-color: var(--orange);
+    height:30vh;
+    
+    padding: 2.5em;
+    
+    
+
+}
+
+
+.box-logo , .bg-orange h2 {
+    display: inline;
+    
+}
+
+.bg-orange h2{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.box-logo {
+    position: relative;
+    bottom: 4px;
+}
+
+.logo-white{
+    width: 30%;
+}
+
+.btn-white{
+    background-color: white;
+    display: block;
+    color: black;
+    margin-top: 2em;
+    font-weight: 900;
+}
+
+.style-box{
+   margin-top:50%;
+}
+
+/*Section 2*/
+
+.section-2{
+    background-color: var(--orange);
+    height: 53vh;
+}
+
+.img-mobile{
+    width: 60%;
+    display:block;
+    margin:auto;
+}
+.border-white{
+    border: 1px solid white;
+    margin: 1em;
+    padding: 1.5em;
+}
+
+.border-white h4 {
+    font-weight: 600;
+    text-align: center; 
+}
+
+.subtitle{
+    margin-left: 1em;
+    font-weight: 600;
+}
+
+/*Section 3*/
+.bg-section-3{
+    background-image: url('../assets/images/conduce.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+}
+
+.btn-section-3{
+    background-color: var(--orange);
+}
+
+.bg-opacity{
+    background: rgba(0, 0, 0, 0.6);
+    height: inherit;
+}
+
+.text-section-3{
+    padding: 4em 0 3em 3em;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+/*Section 4*/
+
+.section-4{
+    background-color: var(--orange);
+    height: 80vh;
+    padding: 1em;
+}
+
+.text-decoration , .text-section-4{
+    display: inline;
+}
+
+.text-section-4{
+    margin-left: 10px;
+    font-size: 11px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.direction{
+    margin-bottom: 2em;
+}
+
+.subtitle-section-4{
+    padding: 1em 0 1em;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.map{
+    width: 100%;
+}
+
+.box-map{
+    border: 1px solid white;
+    padding: 10px;
+    margin: 1em .3em;
+
+}
+
+/*Footer*/
+footer {
+    background-color: var(--grey);
+}
+
+footer li{
+    list-style: none;
+    padding-bottom: 1em;
+}
+.icons-social{
+    padding: 0;
+}
+
+.icons-social li{
+    display: inline-block;
+    margin:5px; 
+}
+
+.logo-footer{
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+.logo-white-footer{
+    padding: 1em;
+}
+
+.text-final{
+    text-align: left;
+    
+}
+
