@@ -31,27 +31,29 @@ header{
 
 /*Section 1*/
 .bg-taxi {
-    background-image: url('../assets/images/taxi.jpg');
-   background-position: center center;
+    background: url('../assets/images/taxi.jpg') no-repeat center center ;
+   padding: 11em 0;
    background-size: cover;
-    height: 80vh;
+   
 }
 
 .bg-orange{
     background-color: var(--orange);
     height:30vh;
     
-    padding: 2.5em;
+    padding: 0.6em 0 0.6em 1.2em
     
     
 
 }
 
 
-.box-logo , .bg-orange h2 {
+.box-logo , .text-logo {
     display: inline;
     
 }
+
+
 
 .bg-orange h2{
     font-weight: 600;
@@ -76,14 +78,15 @@ header{
 }
 
 .style-box{
-   margin-top:50%;
+   margin-top:20%;
 }
 
 /*Section 2*/
 
 .section-2{
     background-color: var(--orange);
-    height: 53vh;
+   
+    padding: 1em;
 }
 
 .img-mobile{
@@ -136,8 +139,8 @@ header{
 
 .section-4{
     background-color: var(--orange);
-    height: 80vh;
-    padding: 1em;
+    
+    padding: 2em;
 }
 
 .text-decoration , .text-section-4{
