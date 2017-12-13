@@ -40,7 +40,7 @@ header{
 .bg-orange{
     background-color: var(--orange);
     height:30vh;
-    
+    margin-left: 25%;
     padding: 0.6em 0 0.6em 1.2em
     
     
@@ -110,6 +110,10 @@ header{
     font-weight: 600;
 }
 
+.container {
+    padding-right: 0;
+}
+
 /*Section 3*/
 .bg-section-3{
     background-image: url('../assets/images/conduce.jpg');
@@ -139,8 +143,7 @@ header{
 
 .section-4{
     background-color: var(--orange);
-    
-    padding: 2em;
+    padding:30px 8px;
 }
 
 .text-decoration , .text-section-4{
@@ -178,6 +181,11 @@ header{
 
 }
 
+.row{
+    margin-right: 0;
+}
+
+
 /*Footer*/
 footer {
     background-color: var(--grey);
@@ -210,3 +218,19 @@ footer li{
     
 }
 
+
+
+@media (min-width: 992px) {
+    .navbar-default {
+      background-color: white;
+      border:none;
+      
+    }
+    .navbar-nav > li > a{
+        padding-right: 40px;
+        
+    }
+    .container{
+        width: 100%;
+    }
+  }
