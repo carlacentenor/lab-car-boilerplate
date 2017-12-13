@@ -42,9 +42,7 @@ header{
     height:30vh;
     margin-left: 25%;
     padding: 0.6em 0 0.6em 1.2em
-    
-    
-
+ 
 }
 
 
@@ -55,7 +53,7 @@ header{
 
 
 
-.bg-orange h2{
+ h2{
     font-weight: 600;
     font-size: 25px;
 }
@@ -232,5 +230,43 @@ footer li{
     }
     .container{
         width: 100%;
+        background-position: 0% 93%;
     }
+
+    .bg-orange-desktop{
+        margin-left:64%; 
+        padding: 0.6em 0 0.6em 1.2em;
+        background-color: var(--orange);
+     
+    }
+
+
+    h2{
+        line-height: .5;
+    }
+    
+    .logo-white{
+        width: 18%;
+    }
+    .logo-section{
+        margin-top: 2em;
+    }
+
+    .btn-white{
+        margin-top: 1em;
+    }
+
+    .line{
+        padding: 0 1em;
+    }
+
+    .line:after , .line:before{
+        content: '';
+        width: 40%;
+        height: 1px;
+        background-color: white;
+        display: inline-block;
+    }
+
+
   }
