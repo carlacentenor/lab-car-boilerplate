@@ -31,10 +31,10 @@ header{
 
 /*Section 1*/
 .bg-taxi {
-    background: url('../assets/images/taxi.jpg') no-repeat center center ;
+    background: url('../assets/images/taxi.jpg') no-repeat center bottom ;
    padding: 11em 0;
    background-size: cover;
-   
+   margin-top: -8em;
 }
 
 .bg-orange{
@@ -115,7 +115,7 @@ header{
 /*Section 3*/
 .bg-section-3{
     background-image: url('../assets/images/conduce.jpg');
-    background-position: center center;
+    background-position: center bottom;
     background-size: cover;
     height: 50vh;
 }
@@ -148,12 +148,15 @@ header{
     display: inline;
 }
 
-.text-section-4{
-    margin-left: 10px;
-    font-size: 11px;
+input{
+    margin-left: 2em;
+    font-size: 14px;
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
+    background-color: var(--orange);
+    outline: none;
+    width: 85%;
 }
 
 .direction{
@@ -161,7 +164,11 @@ header{
 }
 
 .subtitle-section-4{
-    padding: 1em 0 1em;
+    padding: .5em 0 1em .2em;
+    font-size: 15px;
+}
+.title-section-4{
+    font-size: 20px;
 }
 
 .center{
@@ -228,45 +235,161 @@ footer li{
         padding-right: 40px;
         
     }
+
     .container{
         width: 100%;
-        background-position: 0% 93%;
+    }
+    .section-2 {
+        width: 100%;
+        padding-left: 0;
+       
+    }
+
+    
+
+    .bg-taxi{
+        margin-bottom:-5em;
+        padding: 19em 0; 
     }
 
     .bg-orange-desktop{
         margin-left:64%; 
-        padding: 0.6em 0 0.6em 1.2em;
+        padding: 2em;
         background-color: var(--orange);
-     
     }
-
 
     h2{
         line-height: .5;
     }
     
     .logo-white{
-        width: 18%;
+        width: 20%;
+        margin-left: 10px;
     }
     .logo-section{
         margin-top: 2em;
     }
 
     .btn-white{
-        margin-top: 1em;
+        margin: 1em 0 2em 0;
     }
 
-    .line{
-        padding: 0 1em;
+    .btn-desktop{
+        margin: 2.5em 0 0 0;
     }
 
     .line:after , .line:before{
         content: '';
-        width: 40%;
+        width: 30%;
         height: 1px;
         background-color: white;
         display: inline-block;
     }
 
+    .text-logo{
+        font-size: 18px;
+    }
 
+    .line span{    
+        margin: 0 2em;
+        
+    }
+
+    /*Section 2*/
+
+    .border-white{
+        width: 80%;
+        margin-left: 0;
+        border-left: none;
+    }
+    
+    .text-app{
+        padding:2.5em 10em 1em 3em;
+        
+    }
+
+    .text-app h4{
+        text-align: justify;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 1em;
+    }
+
+    .text-app p{
+        text-align: justify;
+        margin-bottom: 2em;
+        font-size: 17px;
+    }
+
+    .box-image-mobile{
+        padding: 4em;
+    }
+    .img-mobile{
+        width: 100%;
+    }
+
+    /*section 3*/
+    .bg-opacity {
+background: none;        
+    }
+    .bg-section-3{
+        background-position: center center;
+        height: 65vh;
+    }
+    .text-section-3{
+        background: rgba(0, 0, 0, 0.6);
+        height: inherit;
+        padding:6em 1.5em 5em 2em;
+        font-size: 18px;
+    }
+
+    .title-section-3{
+        font-size: 25px;
+    }
+
+    /*Section 4*/
+    .section-4{
+        padding: 5em;
+    }
+
+    input{
+        width: 60%;
+    }
+
+    .title-section-4 {
+        
+        font-size: 25px;
+    }
+
+    .btn-white{
+        margin-left: 6em;
+    }
+
+    /*footer*/
+    .logo-footer{
+        width: 60%;
+    }
+    .icons-social{
+        
+        position: absolute;
+        top:19em;
+    }
+    .row{
+        position: relative;
+       
+    }
+
+
+    .box-logos-footer{
+        position: absolute;
+        top:13em;
+
+    }
+    .box-footer{
+        padding: 5em;
+    }
+
+    
+
+   
   }
