@@ -29,6 +29,11 @@ header{
     width: 60%;
 }
 
+.navbar-default{
+    background-color: white;
+    border:none;
+}
+
 /*Section 1*/
 .bg-taxi {
     background: url('../assets/images/taxi.jpg') no-repeat center bottom ;
@@ -45,9 +50,30 @@ header{
  
 }
 
+.bg-orange-desktop{
+    margin-left:64%; 
+    padding: 2em;
+    background-color: var(--orange);
+}
+
 
 .box-logo , .text-logo {
     display: inline;
+    
+}
+
+.line:after , .line:before{
+    content: '';
+    width: 30%;
+    height: 1px;
+    background-color: white;
+    display: inline-block;
+}
+
+
+
+.line span{    
+    margin: 0 2em;
     
 }
 
@@ -110,6 +136,7 @@ header{
 
 .container {
     padding-right: 0;
+    width: 100%;
 }
 
 /*Section 3*/
@@ -157,6 +184,10 @@ input{
     background-color: var(--orange);
     outline: none;
     width: 85%;
+}
+
+input::placeholder{
+    color: white;
 }
 
 .direction{
@@ -223,26 +254,94 @@ footer li{
     
 }
 
+@media (min-width: 768px){
 
-
-@media (min-width: 992px) {
     .navbar-default {
-      background-color: white;
-      border:none;
-      
-    }
+        padding: 1em;
+      }
+
     .navbar-nav > li > a{
         padding-right: 40px;
         
     }
-
-    .container{
-        width: 100%;
+      
+    .line span{    
+        margin: 0 1em;
+        
     }
+
+    .btn-white{
+        margin-bottom: 2em;
+    }
+
+    .btn-desktop{
+        margin-bottom: 0;
+    }
+
+    .border-white{
+        width: 80%;
+        margin-left: 0;
+        border-left: none;
+    }
+
     .section-2 {
         width: 100%;
         padding-left: 0;
        
+    }
+
+    .bg-opacity {
+        background: none;        
+     }
+     .bg-section-3{
+         background-position: center center;
+         height: 65vh;
+     }
+     .text-section-3{
+         background: rgba(0, 0, 0, 0.6);
+         height: inherit;
+         padding:6em 1.5em 5em 2em;
+         font-size: 18px;
+     }
+ 
+     .title-section-3{
+         font-size: 25px;
+     }
+
+     .icons-social{
+        
+        position: absolute;
+        top:19em;
+    }
+    .row{
+        position: relative;
+       
+    }
+
+
+    .box-logos-footer{
+        position: absolute;
+        top:11em;
+
+    }
+    .box-footer{
+        padding: 5em;
+    }
+
+    .logo-footer{
+        width: 90%;
+    }
+
+  }
+
+
+
+
+@media (min-width: 992px) {
+    
+
+    .text-logo{
+        font-size: 18px;
     }
 
     
@@ -252,11 +351,7 @@ footer li{
         padding: 19em 0; 
     }
 
-    .bg-orange-desktop{
-        margin-left:64%; 
-        padding: 2em;
-        background-color: var(--orange);
-    }
+    
 
     h2{
         line-height: .5;
@@ -278,30 +373,11 @@ footer li{
         margin: 2.5em 0 0 0;
     }
 
-    .line:after , .line:before{
-        content: '';
-        width: 30%;
-        height: 1px;
-        background-color: white;
-        display: inline-block;
-    }
-
-    .text-logo{
-        font-size: 18px;
-    }
-
-    .line span{    
-        margin: 0 2em;
-        
-    }
+    
 
     /*Section 2*/
 
-    .border-white{
-        width: 80%;
-        margin-left: 0;
-        border-left: none;
-    }
+   
     
     .text-app{
         padding:2.5em 10em 1em 3em;
@@ -329,23 +405,7 @@ footer li{
     }
 
     /*section 3*/
-    .bg-opacity {
-background: none;        
-    }
-    .bg-section-3{
-        background-position: center center;
-        height: 65vh;
-    }
-    .text-section-3{
-        background: rgba(0, 0, 0, 0.6);
-        height: inherit;
-        padding:6em 1.5em 5em 2em;
-        font-size: 18px;
-    }
-
-    .title-section-3{
-        font-size: 25px;
-    }
+    
 
     /*Section 4*/
     .section-4{
@@ -369,27 +429,15 @@ background: none;
     .logo-footer{
         width: 60%;
     }
-    .icons-social{
-        
-        position: absolute;
-        top:19em;
-    }
-    .row{
-        position: relative;
-       
-    }
-
 
     .box-logos-footer{
         position: absolute;
         top:13em;
 
     }
-    .box-footer{
-        padding: 5em;
-    }
-
     
-
+    
    
   }
+
+  
