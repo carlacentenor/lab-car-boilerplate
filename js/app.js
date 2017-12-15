@@ -1,35 +1,30 @@
 // La funcionalidad de tu proyecto
 function initMap() {
+  var directionsService = new google.maps.DirectionsService;
+  var directionsDisplay = new google.maps.DirectionsRenderer;
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397,
-      lng: 150.644},
-    zoom: 6
+    zoom: 10,
+    center: {lat: -12.020651498087096, 
+      lng: -76.93456887128904}
   });
-  var infoWindow = new google.maps.InfoWindow({map: map});
+  directionsDisplay.setMap(map);
 
-  // Try HTML5 geolocation.
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-      };
-
-      infoWindow.setPosition(pos);
-      infoWindow.setContent('Location found.');
-      map.setCenter(pos);
-    }, function() {
-      handleLocationError(true, infoWindow, map.getCenter());
-    });
-  } else {
-    // Browser doesn't support Geolocation
-    handleLocationError(false, infoWindow, map.getCenter());
-  }
+  var onChangeHandler = function() {
+    calculateAndDisplayRoute(directionsService, directionsDisplay);
+  };
+  document.getElementById('search').addEventListener('click', onChangeHandler);
 }
 
-function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-  infoWindow.setPosition(pos);
-  infoWindow.setContent(browserHasGeolocation ?
-    'Error: The Geolocation service failed.' :
-    'Error: Your browser doesn\'t support geolocation.');
+function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+  directionsService.route({
+    origin: document.getElementById('start').value,
+    destination: document.getElementById('end').value,
+    travelMode: 'DRIVING'
+  }, function(response, status) {
+    if (status === 'OK') {
+      directionsDisplay.setDirections(response);
+    } else {
+      window.alert('Directions request failed due to ' + status);
+    }
+  });
 }

@@ -442,12 +442,12 @@ background-color: #A9A9A9;
      }
      .bg-section-3{
          background-position: center center;
-         height: 65vh;
+         height: 50vh;
      }
      .text-section-3{
          background: rgba(0, 0, 0, 0.6);
          height: inherit;
-         padding:6em 1.5em 5em 2em;
+         padding:3em 1.5em 5em 2em;
          font-size: 18px;
      }
  
@@ -543,7 +543,7 @@ background-color: #A9A9A9;
    
     
     .text-app{
-        padding:2.5em 10em 1em 3em;
+        padding:2.5em 10em 1em 0em;
         
     }
 
@@ -564,7 +564,7 @@ background-color: #A9A9A9;
         padding: 4em;
     }
     .img-mobile{
-        width: 100%;
+        width: 66%;
     }
 
     /*section 3*/
