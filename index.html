@@ -82,7 +82,7 @@
             <div class="line">
                 <span>o bien</span>
             </div>
-            <button class="btn btn-white btn-desktop"  data-toggle="modal" data-target="#modal-driver">Conviertete en conductor</button>
+            <button class="btn btn-white btn-desktop" data-toggle="modal" data-target="#modal-driver">Conviertete en conductor</button>
 
 
         </div>
@@ -148,7 +148,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <div class="box-map" id="map">
-                    
+
                 </div>
             </div>
         </div>
@@ -300,16 +300,18 @@
                     <form class="form-register" action="">
                         <button class="btn btn-old-count  btn-block">Ya tienes una cuenta?</button>
                         <p class="uppercase"> o crea una cuenta nueva</p>
-                        
-                        <input  type="text" class="form-control input-inline" placeholder="Nombre">
+
+                        <input type="text" class="form-control input-inline" placeholder="Nombre">
                         <input type="text" class="form-control input-inline" placeholder="Apellido">
-                    
+
                         <input type="text" class="form-control" placeholder="Correo Electrónico: ejemplo@correo.mx">
                         <input type="text" class="form-control" placeholder="Teléfono">
                         <input type="text" class="form-control" placeholder="Contraseña">
                         <input type="text" class="form-control" placeholder="Ciudad">
                         <input type="text" class="form-control" placeholder="(Opcional) Código de Invitación">
-                        <button class="btn btn-option btn-block">Cómo te enteraste de nosotros? <span class="fa fa-chevron-down"></span> </button>
+                        <button class="btn btn-option btn-block">Cómo te enteraste de nosotros?
+                            <span class="fa fa-chevron-down"></span>
+                        </button>
                         <button class="btn btn-send  btn-info btn-block">Enviar</button>
 
 
@@ -324,82 +326,97 @@
 
     <!-- Modal Driver -->
     <div class="modal fade" id="modal-driver" role="dialog">
-            <div class="modal-dialog" id="modal-width">
-    
-                <!-- Modal content-->
-                <div class="modal-content modal-content-register">
-                    <div class="modal-header modal-section-close">
-    
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-    
-                    </div>
-    
-                    <div class="modal-body">
-                        <form class="form-register" action="">
-                            <p>¿Tienes vehículo de 4 puertas?</p>
-                            <div class="dropdown">
-                                    <button class="btn btn-default btn-combo dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                      Si
-                                      <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                      <li><a href="#">No</a></li>
-                                                              </ul>
-                                  </div>
-                            <p>Marca</p>
-                            <div class="dropdown">
-                                    <button class="btn btn-default btn-combo dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                      Elije la marca de vehículo
-                                      <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                      <li><a href="#">Toyota</a></li>
-                                      <li><a href="#">Ford</a></li>
-                                                              </ul>
-                                  </div>
-                            <p class="text-sug">¿No ves tu vehículo en la lista?Envía un correo electrónico a</p>
-                            <p class="text-email">sociosmdv@uber.com</p>
-                            <p>Modelo</p>
-                            <div class="dropdown">
-                                    <button class="btn btn-default btn-combo dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                      modelo1
-                                      <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                      <li><a href="#">modelo2</a></li>
-                                                              </ul>
-                                  </div>
-                            <p>Año</p>
-                            <div class="dropdown">
-                                    <button class="btn btn-default btn-combo dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                      2017
-                                      <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                      <li><a href="#">2016</a></li>
-                                      <li><a href="#">2015</a></li>
-                                                              </ul>
-                                  </div>
-                            <p>Número de matrícula</p>
-                            <input type="text" class="form-control" placeholder="Número de matrícula">
-                        <p class="text-info">La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
-                            <button class="btn btn-send  btn-info btn-block">Enviar</button>
-    
-    
-    
-                        </form>
-                    </div>
-    
+        <div class="modal-dialog" id="modal-width">
+
+            <!-- Modal content-->
+            <div class="modal-content modal-content-register">
+                <div class="modal-header modal-section-close">
+
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
                 </div>
-    
+
+                <div class="modal-body">
+                    <form class="form-register" action="">
+                        <p>¿Tienes vehículo de 4 puertas?</p>
+                        <div class="dropdown">
+                            <button class="btn btn-default btn-combo dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="true">
+                                Si
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                    <a href="#">No</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Marca</p>
+                        <div class="dropdown">
+                            <button class="btn btn-default btn-combo dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="true">
+                                Elije la marca de vehículo
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                    <a href="#">Toyota</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ford</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="text-sug">¿No ves tu vehículo en la lista?Envía un correo electrónico a</p>
+                        <p class="text-email">sociosmdv@uber.com</p>
+                        <p>Modelo</p>
+                        <div class="dropdown">
+                            <button class="btn btn-default btn-combo dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="true">
+                                modelo1
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                    <a href="#">modelo2</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Año</p>
+                        <div class="dropdown">
+                            <button class="btn btn-default btn-combo dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="true">
+                                2017
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                    <a href="#">2016</a>
+                                </li>
+                                <li>
+                                    <a href="#">2015</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Número de matrícula</p>
+                        <input type="text" class="form-control" placeholder="Número de matrícula">
+                        <p class="text-info">La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+                        <button class="btn btn-send  btn-info btn-block">Enviar</button>
+
+
+
+                    </form>
+                </div>
+
             </div>
+
         </div>
+    </div>
 
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANOXfDM780FYJztgQATAs_-zCFngoNdT4&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANOXfDM780FYJztgQATAs_-zCFngoNdT4&callback=initMap">
     </script>
     <script src="js/app.js"></script>
 </body>
