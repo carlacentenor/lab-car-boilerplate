@@ -8,6 +8,8 @@
     color: white;
 }
 
+
+
 header{
     background-color: white;
 }
@@ -259,6 +261,7 @@ footer li{
 }
 
 
+
 /*modal*/
 
 .modal-content-signin{
@@ -307,11 +310,11 @@ background-color: #A9A9A9;
 }
 .input-inline{
     display: inline-block;
-    width: 49.6%;
+    width: 48.6%;
 }
 
 .btn-send{
-    margin: 0;
+    margin-bottom: 1em;
     background-color: #5BC0DE;
 }
 .btn-send:hover, .btn-old-count:hover{
@@ -322,10 +325,23 @@ background-color: #A9A9A9;
 .btn-old-count{
     margin: 0;
     background-color: black;
+    margin-bottom: 1em;
 }
 
 .btn-option{
     background-color: #DDDDDD;
+    border: none;
+    color: black;
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+.btn-option span{
+    color: black;
+}
+
+.btn-option:hover{
+    background-color: rgb(201, 200, 200);
 }
 
 .modal-section-close{
@@ -336,12 +352,52 @@ background-color: #A9A9A9;
 .uppercase{
     text-transform: uppercase;
     color: black;
-    margin: 1em 25%;
+    margin: 1em 23%;
+    font-weight: 900;
 }
 #modal-width{
-    width: 48% !important;
+    width: 40% !important;
 }
 
+.btn-combo{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.caret{
+    float: right;
+    position: relative;
+    top: 9px;
+    color: black;
+
+}
+
+#modal-driver p {
+    color: black;
+    margin:9px 0;
+    font-weight: 700;
+}
+
+#modal-driver .text-sug{
+    color: #6b6b6b;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+#modal-driver .text-email{
+    color: rgb(82, 119, 133);
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+#modal-driver .text-info{
+    font-weight: 300;
+}
+.modal-body{
+    padding: 25px;
+}
 
 
 @media (min-width: 768px){
@@ -527,9 +583,7 @@ background-color: #A9A9A9;
         font-size: 25px;
     }
 
-    .btn-white{
-        margin-left: 6em;
-    }
+  
 
     /*footer*/
     .logo-footer{
