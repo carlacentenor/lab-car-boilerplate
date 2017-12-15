@@ -17,6 +17,10 @@ header{
     margin-left: 15px;
 }
 
+.form-control{
+    margin-bottom: 1em;
+}
+
 .navbar{
     margin-bottom: 0;
 }
@@ -147,7 +151,7 @@ header{
     height: 50vh;
 }
 
-.btn-section-3{
+.btn-section-3,.btn-signin{
     background-color: var(--orange);
 }
 
@@ -175,8 +179,8 @@ header{
     display: inline;
 }
 
-input{
-    margin-left: 2em;
+.input-local{
+    margin-left: 1em;
     font-size: 14px;
     border: 1px solid white;
     border-radius: 10px;
@@ -186,7 +190,7 @@ input{
     width: 85%;
 }
 
-input::placeholder{
+.input-local::placeholder{
     color: white;
 }
 
@@ -253,6 +257,92 @@ footer li{
     text-align: left;
     
 }
+
+
+/*modal*/
+
+.modal-content-signin{
+    background-color: #08AC9D;
+}
+
+.img-modal{
+    width: 35%;
+    margin:0 35%;
+}
+
+.glyphicon{
+    top: 0;
+}
+
+.form-signin{
+    background-color: #F5F5F5;
+    padding: 1em;
+    margin: .1em 4em 4em 4em;
+    border-radius: 5px;
+}
+
+.input-group{
+    margin-bottom: 16px;
+}
+
+.btn-signin{
+    margin: 0 33% 8% 33%;
+}
+
+.password-text{
+    color: black;
+}
+
+.red-text{
+    color: rgb(158, 16, 16);
+}
+
+button.close {
+    padding: 9px 20px;
+    
+}
+
+.modal-content-register{
+background-color: #A9A9A9;
+}
+.input-inline{
+    display: inline-block;
+    width: 49.6%;
+}
+
+.btn-send{
+    margin: 0;
+    background-color: #5BC0DE;
+}
+.btn-send:hover, .btn-old-count:hover{
+    color: white;
+    font-weight: 900;
+}
+
+.btn-old-count{
+    margin: 0;
+    background-color: black;
+}
+
+.btn-option{
+    background-color: #DDDDDD;
+}
+
+.modal-section-close{
+    padding: 0;
+    border-bottom: none;
+}
+
+.uppercase{
+    text-transform: uppercase;
+    color: black;
+    margin: 1em 25%;
+}
+#modal-width{
+    width: 48% !important;
+}
+
+
 
 @media (min-width: 768px){
 
@@ -330,6 +420,22 @@ footer li{
 
     .logo-footer{
         width: 90%;
+    }
+
+    /*Modal*/
+    .form-signin{
+        
+        
+        margin: .1em 10em 2em 10em;
+        
+    }
+
+    .btn-signin{
+       margin:  0 37% 8% 37%;
+    }
+
+    .img-modal{
+        width: 32%;
     }
 
   }
@@ -412,7 +518,7 @@ footer li{
         padding: 5em;
     }
 
-    input{
+    .input-local{
         width: 60%;
     }
 
