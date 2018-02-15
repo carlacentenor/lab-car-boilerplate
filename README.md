@@ -36,18 +36,10 @@ Como extra puedes añadir los modales necesarios en la versión web.
 
 ### Versión desktop
 
-![Con titulo](assets/docs/desktop.png "titulo")
+![Con titulo](https://user-images.githubusercontent.com/32285482/36280951-f4bef51e-1269-11e8-9c10-80a101404d5f.png)
 
-### Versión Mobile
 
-![Con titulo](assets/docs/mobile.png "titulo")
 
-### Modales
 
-![Con titulo](assets/docs/modal1.JPG "titulo")
-
-![Con titulo](assets/docs/modal2.JPG "titulo")
-
-![Con titulo](assets/docs/modal3.JPG "titulo")
 
 Realizado por Carla Centeno Ramos.
