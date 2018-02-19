@@ -1,7 +1,12 @@
 // La funcionalidad de tu proyecto
+var origin = document.getElementById('start');
+var destiny = document.getElementById('end');
+
 function initMap() {
+ 
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer;
+  initAutocomplete();
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 10,
     center: {lat: -12.020651498087096, 
@@ -17,8 +22,8 @@ function initMap() {
 
 function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   directionsService.route({
-    origin: document.getElementById('start').value,
-    destination: document.getElementById('end').value,
+    origin: origin.value,
+    destination: destiny.value,
     travelMode: 'DRIVING'
   }, function(response, status) {
     if (status === 'OK') {
@@ -28,3 +33,9 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
     }
   });
 }
+
+function initAutocomplete() {
+  let autocompleteorigin = new google.maps.places.Autocomplete(origin);
+  let autocompleteDestiny = new google.maps.places.Autocomplete(destiny);
+}
+

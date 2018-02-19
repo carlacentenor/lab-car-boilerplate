@@ -7,8 +7,11 @@
 
 * {
     font-family: 'Raleway', sans-serif;
-    color: white;
     outline: none;
+}
+
+.white {
+    color: white;
 }
 
 header {
@@ -40,7 +43,6 @@ header {
     background-color: white;
     border: none;
 }
-
 
 /*Section 1*/
 
@@ -108,7 +110,6 @@ h2 {
     margin-top: 20%;
 }
 
-
 /*Section 2*/
 
 .section-2 {
@@ -143,7 +144,6 @@ h2 {
     width: 100%;
 }
 
-
 /*Section 3*/
 
 .bg-section-3 {
@@ -171,7 +171,6 @@ h2 {
     font-weight: 600;
 }
 
-
 /*Section 4*/
 
 .section-4 {
@@ -187,6 +186,7 @@ h2 {
 .input-local {
     margin-left: 1em;
     font-size: 14px;
+    color: white;
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
@@ -231,7 +231,6 @@ h2 {
     margin-right: 0;
 }
 
-
 /*Footer*/
 
 footer {
@@ -264,7 +263,6 @@ footer li {
 .text-final {
     text-align: left;
 }
-
 
 /*modal*/
 
@@ -361,8 +359,6 @@ button.close {
     margin: 1em 23%;
     font-weight: 900;
 }
-
-
 
 .btn-combo {
     text-align: left;
