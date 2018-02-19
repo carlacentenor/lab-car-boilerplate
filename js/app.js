@@ -3,7 +3,6 @@ var origin = document.getElementById('start');
 var destiny = document.getElementById('end');
 
 function initMap() {
- 
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer;
   initAutocomplete();
